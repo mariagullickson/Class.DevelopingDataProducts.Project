@@ -1,6 +1,7 @@
 shinyUI(pageWithSidebar(
   headerPanel("Infant and Toddler Growth Percentile"),
   sidebarPanel(
+    p("Enter your child's gender, age, and measurements.  Then hit submit to learn what percentile they are in for each measurement."),
     selectInput("gender", "Gender", selected='0',
                 choices=c(
                   'Select one'='-1',
