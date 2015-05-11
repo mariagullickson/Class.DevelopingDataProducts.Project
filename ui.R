@@ -55,15 +55,18 @@ shinyUI(pageWithSidebar(
     numericInput('head', 'Head circumfrence in centimeters', NULL),
     submitButton('Submit')
     ),
-  mainPanel(h3(
-    span('Your ', inline=TRUE),
-    textOutput('age', inline=TRUE),
-    textOutput('gender', inline=TRUE),
-    span(' child is in the ', inline=TRUE),
-    textOutput('weightpct', inline=TRUE),
-    span(' percentile for weight, the ', inline=TRUE),
-    textOutput('heightpct', inline=TRUE),
-    span(' percentile for height, and the', inline=TRUE),
-    textOutput('headpct', inline=TRUE), span(' percentile for head circumference.', inline=TRUE)
-  ))
+  mainPanel(
+    h3(
+      span('Your ', inline=TRUE),
+      textOutput('age', inline=TRUE),
+      textOutput('gender', inline=TRUE),
+      span(' child is in the ', inline=TRUE),
+      textOutput('weightpct', inline=TRUE),
+      span(' percentile for weight, the ', inline=TRUE),
+      textOutput('heightpct', inline=TRUE),
+      span(' percentile for height, and the', inline=TRUE),
+      textOutput('headpct', inline=TRUE), span(' percentile for head circumference.', inline=TRUE)
+    ),
+    p('Note: these percentiles are based on data from the United States.  Percentiles in other countries are likely to be different.')
+    )
 ))
