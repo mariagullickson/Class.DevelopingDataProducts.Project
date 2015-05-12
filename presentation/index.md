@@ -41,8 +41,10 @@ knit        : slidify::knit2slides
 
 ## What is the best way to check your baby's growth?
 
+
 - Baby books have charts, but they can be a pain to use.
 - The [***Infant and Toddler Growth Percentile***](https://mariagullickson.shinyapps.io/project/) tool does all the work for you.
+- It can even handle multiple units, so you can enter your baby's weight as 12.2 pounds or as 5.5 kilograms, for example.
 
 ---
 

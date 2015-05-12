@@ -40,9 +40,15 @@ knit        : slidify::knit2slides
 ---
 
 ## What is the best way to check your baby's growth?
+```{r unitconversion, echo=FALSE}
+lb <- 12.2
+kilogramsPerPound <- 0.453592
+kg <- round(lb * kilogramsPerPound, 1)
+```
 
 - Baby books have charts, but they can be a pain to use.
 - The [***Infant and Toddler Growth Percentile***](https://mariagullickson.shinyapps.io/project/) tool does all the work for you.
+- It can even handle multiple units, so you can enter your baby's weight as `r lb` pounds or as `r kg` kilograms, for example.
 
 ---
 
