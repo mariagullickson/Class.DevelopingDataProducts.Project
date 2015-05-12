@@ -2,13 +2,9 @@ shinyUI(pageWithSidebar(
   headerPanel("Infant and Toddler Growth Percentile"),
   sidebarPanel(
     p("Enter your child's gender, age, and measurements.  Then hit submit to learn what percentile they are in for each measurement."),
-    selectInput("gender", "Gender", selected='0',
-                choices=c(
-                  'Select one'='-1',
-                  'Male'='1',
-                  'Female'='2'
-                  )),
-    selectInput("months", "Age in months",
+    radioButtons("gender", "Gender", inline=TRUE,
+                 choices=c('Male'='1', 'Female'='2')),
+    selectInput("months", "Age",
                 choices=c(
                   'Select one'='-1',
                   'Newborn'='0',
@@ -50,9 +46,27 @@ shinyUI(pageWithSidebar(
                   '35-36 months'='35.5',
                   '36 months'='36'
                   )),
-    numericInput('weight', 'Weight in kilograms', NULL),
-    numericInput('height', 'Height in centimeters', NULL),
-    numericInput('head', 'Head circumfrence in centimeters', NULL),
+    p(
+      div(style="display:inline-block", 
+          numericInput('weight', 'Weight', 0)),
+      div(style="display:inline-block", 
+          radioButtons("weightunit", "", inline=TRUE,
+                       choices=c('Kilograms'='kg', 'Pounds'='lb')))
+      ),
+    p(
+      div(style="display:inline-block", 
+          numericInput('height', 'Height', 0)),
+      div(style="display:inline-block", 
+          radioButtons("heightunit", "", inline=TRUE,
+                       choices=c('Centimeters'='cm', 'Inches'='in')))
+      ),
+    p(
+      div(style="display:inline-block", 
+        numericInput('head', 'Head circumfrence', 0)),
+      div(style="display:inline-block", 
+          radioButtons("headunit", "", inline=TRUE,
+                       choices=c('Centimeters'='cm', 'Inches'='in')))
+      ),
     submitButton('Submit')
     ),
   mainPanel(
