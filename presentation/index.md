@@ -1,0 +1,72 @@
+---
+title       : Identifying Your Baby's Growth Percentile
+subtitle    : Developing Data Products course project
+author      : Maria Gullickson
+job         : 
+framework   : html5slides       # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+
+--- .titleslide
+
+# Is Your Baby's Growth On Track?
+#### Developing Data Products course project
+##### By Maria Gullickson
+
+<style type='text/css'>
+.titleslide {
+  background-color: lightblue !important;
+  text-align: center !important;
+  vertical-align: center
+}
+
+.titleslide h3 {
+  font-size: 40px;
+  padding-top: 70px;
+}
+</style>
+
+---
+
+## What's the problem?
+
+- You want to know if your baby's growth is on track.
+- You may not always get this information from your pediatrician.
+- You want to know how your baby is doing between visits to the pediatrician.
+
+---
+
+## What is the best way to check your baby's growth?
+
+- Baby books have charts, but they can be a pain to use.
+- The [***Infant and Toddler Growth Percentile***](https://mariagullickson.shinyapps.io/project/) tool does all the work for you.
+
+---
+
+## How do I use the tool?
+
+- First enter your baby's gender and age.
+- Then enter your baby's measurements - weight, height and head circumference.
+- If you don't know them all, simply enter the ones you know.
+- Hit submit.
+- Your baby's percentile as compared to other babies of the same age and gender will be presented to the right.
+
+_Note: percentiles are based on data in the United States.  Percentiles will vary in other countries._
+
+---
+
+## How cool is this?
+
+![](assets/img/coolbaby.jpg)
+
+Incredibly Cool!
+
+<style type='text/css'>
+p {
+    text-align: center !important;
+    padding-top: 50px;
+}
+</style>
